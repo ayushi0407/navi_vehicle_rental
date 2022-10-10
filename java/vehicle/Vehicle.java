@@ -2,17 +2,17 @@ package vehicle;
 public class Vehicle {
     private double price;
     private String vehicleType;
-    private int id;
+    private String id;
 
-public Vehicle(double price, String vehicleType, int id) {
+public Vehicle(double price, String vehicleType, String id) {
     this.price = price;
     this.vehicleType = vehicleType;
     this.id = id;
 }
-public int getId() {
+public String getId() {
     return id;
 }
-public void setId(int id) {
+public void setId(String id) {
     this.id = id;
 }
 public double getPrice() {

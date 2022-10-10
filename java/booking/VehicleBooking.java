@@ -2,15 +2,15 @@ package booking;
 import java.util.HashMap;
 
 public class VehicleBooking {
-    private HashMap<Integer, Booking> bookedVehicles;
+    private HashMap<String, Booking> bookedVehicles;
 
     public VehicleBooking() {
         this.bookedVehicles = new HashMap<>();
     }
-    public void addBooking(int vehicleId, Booking booking) {
+    public void addBooking(String vehicleId, Booking booking) {
         this.bookedVehicles.put(vehicleId, booking);
     }
-    public boolean isVehicleAvailable(int vehicleId, int startTime, int endTime) {
+    public boolean isVehicleAvailable(String vehicleId, int startTime, int endTime) {
         if(!this.bookedVehicles.containsKey(vehicleId)){
             return true;
         }
@@ -19,6 +19,5 @@ public class VehicleBooking {
             return true;
         }
         return false;
-
     }
 }
