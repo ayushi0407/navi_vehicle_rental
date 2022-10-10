@@ -22,14 +22,14 @@ public class RentalService {
 
     public void addBranch(Branch branch) {
         this.branches.addBranch(branch);
-        System.out.println(true)
+        System.out.println(true);
     }
 
     public void addVehicleToBranch(String branchName, Vehicle vehicle) {
         Branch branch = this.branches.getBranch(branchName);
         this.vehicles.putVehicleById(vehicle);
         branch.addVehicle(vehicle);
-        System.out.println(true)
+        System.out.println(true);
     }
 
     public double getBookingPrice(double price, int start_time, int end_time){
