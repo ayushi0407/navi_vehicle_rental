@@ -111,7 +111,7 @@ class RentalService(Branches, Vehicles, BranchesVehiclesMapping, VehicleBooking)
             if len(available_vehicles) > 0:
                 sorted_available_vehicles = sorted(available_vehicles.items(), key = lambda x: x[1]['price'])
                 for vehicle in sorted_available_vehicles:
-                    print(vehicle[0])
+                    print(vehicle)
             else:
                 print("No vehicle available")
         else:
